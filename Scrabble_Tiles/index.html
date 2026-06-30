@@ -1,0 +1,68 @@
+<!-- Copyright (c) by Kareem Rajeh
+Kareem_Rajeh@student.uml.edu
+ The purpose of the program is to recreate the popular game, Scrabble. The mechanics of this game
+ is to allow players to drag and drop letter tiles onto a single row of the Scrabble board, forming 
+ words and scoring points based on letter values and bonus squares. There's other features such as redealing cards,
+ keeping score of points, and using a dictionary to scan for real words instead of letting players make
+ nonexistent words. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble</title>
+
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/scrabble.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+    <!-- title -->
+    <h1>SCRABBLE</h1>
+
+    <!-- displays score -->
+    <div id="score-bar">
+        <span id="word-display"></span>
+        <span id="score-label">Total: <strong id="total-score">0</strong></span>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="board-wrap">
+        <img src="Scrabble_Board_OneLine.png" id="board-img" alt="Scrabble board row">
+
+        <div id="squares"></div>
+    </div>
+    <!-- interactive buttons -->
+    <div id="btn-row">
+        <button id="submit-btn">Submit Word</button>
+        <button id="deal-btn">New Deal</button>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+    <div id="rack-wrap">
+        <img src="scrabble-tile-holder-406774_640.png" id="rack-bg" alt="Tile rack">
+        <div id="tile-rack"></div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+        crossorigin="anonymous"></script>
+<script src="Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+
+<script src="scrabble.js"></script>
+
+</body>
+</html>
